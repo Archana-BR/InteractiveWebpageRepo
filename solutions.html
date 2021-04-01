@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <link rel="stylesheet" href="/src/sass/styles-solutions.scss">  
+    <title>Parcel Sandbox</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      charset="UTF-8"
+    />
+  </head>
+
+  <body>
+    <div id="solutions">
+          <div id="box-header">
+            <img id="logo" src="" alter="logo">COMPANY - LOGO</img>
+            <a id="item" href="/index.html">About</a>
+            <a id="item" href="/services.html">Services</a>
+            <a id="item" href="/solutions.html">Solutions</a>
+            <a id="item" href="/contacts.html">Contact Us</a>
+          </div>
+
+          <p>A device loop animation<br>as seen on <a href="https://slides.com" target="_blank">slides.com</a></p>
+
+          <div class="animation" data-animation-step="1">
+            <div class="device">
+              <div class="phone-home-button"></div>
+              <div class="tablet-home-button"></div>
+              <div class="screen-stand"><div class="leg"></div><div class="foot"></div></div>
+              <div class="display">
+                <div class="slide1"><div>Works on <em>desktops</em></div></div>
+                <div class="slide2"><div>Works on <em>tablets</em></div></div>
+                <div class="slide3"><div>Works on <em>phones</em></div></div>
+              </div>
+            </div>
+          </div>
+          
+    <div> 
+  </body>
+  <script>
+
+    // this thing is js driven on slid.es so I didn't bother switching out for css animations
+    var duration = 7000, steps = 3, step = 1;
+
+    setInterval( function() {
+        document.querySelector( '.animation' ).setAttribute( 'data-animation-step', step = ++step > steps ? 1 : step );
+    }, duration / steps );
+
+  </script>
+
+
+</html>
